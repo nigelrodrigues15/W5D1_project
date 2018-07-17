@@ -1,0 +1,31 @@
+<% topics = ["World",
+  "San Francisco",
+  "New York",
+  "Bootcamp Prep",
+  "Jumpstart",
+  "Online",
+  "Marketing",
+  "Sales",
+  "TalentMatch",
+  "Alumni",
+  "All"] %>
+  
+  
+  <header class="section">
+    <nav>
+      <ul class="section_topics">
+        <% topics.each do |topic| %>
+        <% if topic == "All" %>
+        <li class="all_hover">
+          <% else %>
+          <li>
+            <% end %>
+            <a href="#"><%= topic %></a>
+            
+          </li>
+          <% end %>
+          
+        </ul>
+      </nav>
+    </header>
+    
